@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap');
+
+:root{
+    --fuente--monserrate: font-family: "Montserrat", sans-serif;
+    --fuente--embed:  font-family: "Protest Revolution", sans-serif;
+    --fuente--protest: font-family: "Protest Revolution", sans-serif;
+    --bg--inicio: #FEE100;
+    --bg--inicio--dos: #E7E6A6;
+    --color--text: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}

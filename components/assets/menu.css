@@ -1,0 +1,56 @@
+@import url(/components/assets/root.css);
+
+.menu{
+    width: 100%;
+    /* background-color: var(--bg--inicio); */
+    display: flex;
+    justify-content: space-around;
+}
+.menu--navbar{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu--telefono{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 3em;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.telefono--text{
+    grid-column: 1;
+    font-size: var(--fuente--monserrate);
+    font-size: 1.3em;
+}
+.imagen--telefono{
+    grid-row: 1;
+    grid-column: 2;
+    width: 2em;
+    height: 3em;
+    display: flex;
+}
+.img--telefono{
+    width: 100%;
+    height: 100%;
+}
+.menu--lista{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.menu--items{
+    padding: 10px;
+}
+.menu--enlaces{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: var(--color--text);
+    text-decoration: none;
+    font-size: var(--fuente--monserrate);
+}
