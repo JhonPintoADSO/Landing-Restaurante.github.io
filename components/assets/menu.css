@@ -5,6 +5,10 @@
     /* background-color: var(--bg--inicio); */
     display: flex;
     justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 .menu--navbar{
     width: 50%;

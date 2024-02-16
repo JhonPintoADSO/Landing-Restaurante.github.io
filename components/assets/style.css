@@ -1,0 +1,412 @@
+@import url(/components/assets/root.css);
+@import url(/components/assets/menu.css);
+
+
+/* Estilos de la seccion de inicio */
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.bg--amarillo{
+    width: 100%;
+    height: 46em;
+    margin: 0 auto;
+    background: var(--bg--inicio);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.bg--verde{
+    width: 50%;
+    height: 46em;
+    background: var(--bg--inicio--dos);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -90;
+    clip-path: polygon(45% 0, 100% 0%, 100% 100%, 26% 100%);
+}
+
+.container--inicio{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.card--inicio--text{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.card--inicio--text .text--title{
+    font-family: var(--fuente--embed);
+    font-size: 2.5em;
+}
+.card--inicio--text .text--title--dos{
+    font-family: var(--fuente--protest);
+    font-size: 5em;
+}
+.card--inicio--text .text--title--tres{
+    font-family: var(--fuente--monserrate);
+    font-size: 0.8em;
+}
+hr{
+    width: 40%;
+    height: 2px;
+    border:1px solid var(--color--text);
+}
+.card--otra{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.card--otra .text{
+    grid-column: 1;
+    font-family: var(--fuente--protest);
+}
+.text--span{
+    grid-column: 2 !important;
+    grid-row: 1 / 3;
+    font-size: 1.5em;
+    position: relative;
+    margin: 0 auto;
+    font-family: var(--fuente--protest);
+}
+.btn--order{
+    padding: 10px 30px;
+    /* background: red; */
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    font-family: var(--fuente--monserrate);
+    font-weight: bold;
+}
+.card--inicio--img{
+    grid-column: 2;
+    grid-row: 1;
+}
+/* Finalizan los estilos de la seccion de inicio */
+
+/* Estilos de la seccion de menu */
+.container--menus{
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 10em 1fr;
+}
+.container--menus .card--header--text{
+    grid-row: 1 / 2;
+    grid-column: 4 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: auto;
+}
+.container--menus .card--header--text .title{
+    font-family: var(--fuente--protest);
+    font-size: 2.5em;
+}
+.container--menus .card--header--text .text{
+    font-family: var(--fuente--monserrate);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.container--menus .card--body{
+    grid-row: 2 / 3;
+    grid-column: 2 / 11;
+    font-family: var(--fuente--monserrate);
+    font-weight: bold;
+}
+.imagen--dos, .imagen--tres, .imagen--cuatro{
+    width: 300px;
+    height: 300px;
+}
+.imagen--dos{
+    width: 350px;
+    height: 350px;
+}
+.img--dos, .img--tres, .img--cuatro{
+    width: 100%;
+    height: 100%;
+}
+.container--menus .card--imagen{
+    display: flex;
+    justify-content: space-between;
+}
+.card--menuUno, .card--menuDos, .card--menuTres{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.bg--verde--menu{
+    width: 100%;
+    left: 0;
+    top: 67em;
+    height: 8em;
+    z-index: -100;
+    background: var(--bg--inicio--dos);
+    position: absolute;
+}
+.btn--order--bg{
+    background: var(--bg--inicio);
+    border: none;
+}
+.card--imagen .text{
+    font-weight: 400;
+}
+/* Finaliza la seccion de los menus */
+
+/* Estilos de la seccion del discovery*/
+.container--discover{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11 , 1fr);
+    grid-template-rows: 8em 1fr;
+    padding: 50px 0;
+    text-align: center;
+}
+.card--header--text{
+    grid-column: 4 / 9;
+    grid-row: 1;
+}
+.card--header--text .title{
+    font-family: var(--fuente--monserrate);
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9em;
+}
+.card--header--text .text{
+    font-family: var(--fuente--monserrate);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.title--dos{
+    font-family: var(--fuente--protest);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+}
+.card--body--imagenes{
+    grid-row: 2;
+    grid-column: 1 / 12;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.imagen--cinco{
+    grid-column: 4 / 9;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+.img--cinco, .img--seis, .img--siete{
+    width: 100%;
+    height: 100%;
+} 
+.imagen--seis{
+    width: 100%;
+    height: 400px;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    opacity: 0.8;
+    position: relative;
+    z-index: -50;
+}
+.imagen--siete{
+    position: relative;
+    z-index: -50;
+    width: 100%;
+    height: 400px;
+    grid-column: 8 / 12;
+    grid-row: 1;
+    opacity: 0.8;
+}
+/* Aqui finalizan los estilos de la seccion del discovery */
+
+/* Estilos de la seccion de los platos populares*/
+
+.container--populares{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 0;
+}
+.populares--card--uno{
+    position: relative;
+    grid-column: 3 / 6;
+    grid-row: 2 / 4;
+}
+.texto--popular{
+    display: flex;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    color: white;
+    flex-direction: column;
+    font-family: var(--fuente--monserrate);
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.populares--card--dos{
+    position: relative;
+    grid-column: 7 / 10;
+    grid-row: 2 / 3;
+}
+.texto--popular--dos{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1.5em;
+    left: 2em;
+    color: white;
+    font-size: 1.5em; 
+    font-weight: bold;
+    font-family: var(--fuente--monserrate);
+}
+.populares--card--tres{
+    position: relative;
+    grid-column: 7 / 10;
+    grid-row: 3 / 4;
+}
+.texto--popular--tres{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    color: white;
+    font-family: var(--fuente--monserrate);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.imagen--ocho{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.imagen--nueve{
+    width: 100%;
+    height: 100%;
+}
+.imagen--diez{
+    width: 100%;
+    height: 100%;
+}
+.img--ocho, .img--nueve, .img--diez{
+    width: 100%;
+    height: 100%;
+}
+/* Finalizan los estilos de los platos populares */
+
+/* Estilos de la seccion de contacto */
+.container--contact{
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 5em 1fr;
+    gap: 10px 0;
+}
+.card--header--form{
+    grid-column: 4 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card--header--form .text{
+    font-family: var(--fuente--monserrate);
+    font-size: 1em;
+    font-weight: bold;
+}
+.card--header--form .title{
+    font-family: var(--fuente--protest);
+    font-size: 3em;
+}
+.card--formulario{
+    grid-column: 4 / 9;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 20px;
+    padding: 20px;
+}
+.input--name{
+    grid-column: 1;
+    grid-row: 1;
+}
+.input--date{
+    grid-column: 1;
+    grid-row: 2;
+}
+.input--people{
+    grid-column: 1;
+    grid-row: 3 ;
+}
+.input--email{
+    grid-column: 2;
+    grid-row: 1;
+}
+.input--time{
+    grid-column: 2;
+    grid-row: 2;
+}
+.btn--sumbit{
+    grid-column: 2;
+    grid-row: 3;
+}
+.formulario input{
+    width: 100%;
+    height: 3.2em;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: var(--fuente--monserrate);
+    transition: .2s all;
+    font-weight: 600;
+}
+input:focus{
+    outline: 2px solid var(--bg--inicio);
+}
+.btn--sumbit{
+    border: none;
+    background: var(--bg--inicio);
+    font-family: var(--fuente--monserrate);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+/* Terminan los estilos de la seccion de contacto */

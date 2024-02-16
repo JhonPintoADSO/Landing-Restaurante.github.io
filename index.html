@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/components/assets/menu.css">
+    <link rel="stylesheet" href="/components/assets/style.css">
 </head>
 <body>
 
@@ -42,13 +42,16 @@
             <div class="bg--amarillo"></div>
             <div class="bg--verde"></div>
             <article class="card--inicio--text">            
-                <p class="text">Are You Hungry?</p>
-                <p class="text">DONT WAIT!</p>
-                <p class="text">LET START TO ORDER FOOD NOW</p>
+                <p class="text text--title">Are You Hungry?</p>
+                <p class="text text--title--dos">DONT WAIT!</p>
+                <p class="text text--title--tres">LET START TO ORDER FOOD NOW</p>
                 <hr>
-                <p class="text">THIS MONDAY</p>
-                <p class="text">HAPPY HOURS</p>
-                <span class="text">1+1=3</span>
+                <div class="card--otra">
+                    <p class="text">THIS MONDAY</p>
+                    <p class="text">HAPPY HOURS</p>
+                    <span class="text text--span">1+1=3</span>
+                </div>
+
                 <a href="" class="btn--order">ORDER NOW</a>
             </article>
             <article class="card--inicio--img">
@@ -78,7 +81,7 @@
                         </figure>
                         <h4 class="title">Lorem Ipsum Dolor</h4>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, laborum?</p>
-                        <a href="" class="btn--order">ORDER NOW</a>
+                        <a href="" class="btn--order btn--order--bg">ORDER NOW</a>
                     </div>
                     <div class="card--menuDos">
                         <figure class="imagen--tres">
@@ -86,7 +89,7 @@
                         </figure>
                         <h4 class="title">Lorem Ipsum Dolor</h4>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, laborum?</p>
-                        <a href="" class="btn--order">ORDER NOW</a>
+                        <a href="" class="btn--order btn--order--bg">ORDER NOW</a>
                     </div>
                     <div class="card--menuTres">
                         <figure class="imagen--cuatro">
@@ -94,7 +97,7 @@
                         </figure>
                         <h4 class="title">Lorem Ipsum Dolor</h4>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, laborum?</p>
-                        <a href="" class="btn--order">ORDER NOW</a>
+                        <a href="" class="btn--order btn--order--bg">ORDER NOW</a>
                     </div>
                 </div>
             </article>
@@ -105,7 +108,10 @@
         <section class="container--discover" id="discovery">
             <article class="card--header--text">
                 <h2 class="title">
-                    CHOOSE & ENJOY
+                    Discover
+                </h2>
+                <h2 class="title--dos">
+                    Upcoming events
                 </h2>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus similique quidem et tenetur quasi odio alias nihil voluptatum ipsum dolorum sed corporis eos asperiores cum eaque, placeat qui laudantium totam.</p>
             </article>
@@ -128,27 +134,49 @@
                 <figure class="imagen--ocho">
                     <img src="/components/img/imagen--ocho.png" alt="#ImagenPopularOcho" class="img--ocho">
                 </figure>
-                <p class="text">
-                    TRY IT TODAY
-                    most
-                    popular
-                    pasta
-                </p>
+                <div class="texto--popular">
+                    <p class="text">
+                        TRY IT TODAY
+                    </p>
+                    <p class="text">
+                        most
+                    </p>
+                    <p class="text">
+                        popular
+                    </p>
+                    <p class="text">
+                        pasta
+                    </p>
+                </div>
             </article>
             <article class="populares--card populares--card--dos">
                 <figure class="imagen--nueve">
                     <img src="/components/img/imagen--nueve.png" alt="#ImagenPopularNueve" class="img--nueve">
                 </figure>
-                <p class="text">
-                    try it TODAY
-                    more fun
-                    more taste
-                </p>
+                <div class="texto--popular--dos">
+                    <p class="text">
+                        try it TODAY
+                    </p>
+                    <p class="text">
+                        more fun
+                    </p>
+                    <p class="text">
+                        more taste
+                    </p>
+                </div>
             </article>
-            <article class="populares--card">
+            <article class="populares--card populares--card--tres">
                 <figure class="imagen--diez">
                     <img src="/components/img/imagen--diez.png" alt="#ImagenPopularNueve" class="img--diez">
                 </figure>
+                <div class="texto--popular--tres">
+                    <p class="text">
+                        Try it today 
+                    </p>
+                    <p class="text">
+                        Fresh & chili
+                    </p>
+                </div>
             </article>
         </section>
         <!-- Finaliza la seccion de las comidad populares -->
@@ -165,21 +193,21 @@
             <article class="card--formulario">
                 <form action="" class="formulario">
                     <label for="name"></label>
-                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="name" placeholder="Name" class="input--name">
                     <br>
                     <label for="date"></label>
-                    <input type="text" name="date" placeholder="Date">
+                    <input type="text" name="date" placeholder="Date" class="input--date">
                     <br>
                     <label for="people"></label>
-                    <input type="text" name="People" placeholder="People">
+                    <input type="text" name="People" placeholder="People" class="input--people">
                     <br>
                     <label for="email"></label>
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email" class="input--email">
                     <br>
                     <label for="time"></label>
-                    <input type="text" name="time" placeholder="Time">
+                    <input type="text" name="time" placeholder="Time" class="input--time">
                     <br>
-                    <button type="submit">FIND A TABLE</button>
+                    <button type="submit" class="btn--sumbit">FIND A TABLE</button>
                 </form>
             </article>
         </section>
